@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+
+
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    width: 100vw;
+    color:black;
+}
+
+ul {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 0;
+    background: blue;
+    color:whitesmoke;
+    font-family: 'Montserrat','sans-serif';
+}
+
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+header nav p {
+    font-weight: bold;
+}
+
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li{
+    margin: 0 15px;
+}
+
+
+header {
+    height: calc(150vh - 150px);
+    background: no-repeat center/cover url('imagens/header-image\ \(2\).jpg');
+}
+
+.header-content {
+    max-width: 400px;
+    margin: 150px auto;
+    text-align: center;
+}
+
+.header-content h1 {
+    margin-bottom: 10px;
+    font-size: 4rem;
+}
+
+.pacotes {
+    background:#818a9e;
+    padding: 15px;
+}
+
+.pacotes .pacotes-cards{
+    display:flex;
+    margin: auto;
+    max-width: 950px;
+    flex-wrap: wrap;
+}
+
+.pacotes .pacotes-title{
+    width: 100%;
+    margin:auto;
+    text-align: center;
+}
+
+.pacotes .card{
+    width:250px;
+    height: 350px;
+    background: white;
+    border-radius: 24px 0px;
+    margin:  25px;
+    position:relative;
+}
+
+
+.pacotes .card-image{
+    width:250px;
+    height: 200px;
+    border-radius: 24px 0 0 0;
+    object-fit: cover;
+}
+
+.pacotes .card-content {
+    padding: 0 15px;
+}
+
+.pacotes .card-content ul {
+    display: flex;
+    flex-direction:column;
+    list-style: none;
+    padding: 0px;
+}
+
+.pacotes .card-content ul li{
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    margin: 3px 0;
+    color:grey;
+}
+
+.pacotes .card-content li svg{
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+.pacotes .card-content h1{
+    font-size: 1rem;
+}
+
+.pacotes .card .card-tag-top{
+    position: absolute;
+    right: 0;
+    top: 15px;
+    background: #f19b39;
+    border-radius: 8px 0 0 8px;
+    padding:5px 10px;
+}
+
+
+.pacotes .card .card-tag-bottom{
+    position: absolute;
+    left: 0;
+    top: 160px;
+    background: #1d61dd;
+    border-radius: 0 8px 8px 0;
+    padding:5px 10px;
+}
+
+.pacotes .card .card-tag p{
+    margin: 0;
+    font-size: 0.8rem;
+    color: white;
+    font-weight: bold;
+}
+
+.servicos {
+    padding: 15px;
+}
+.servicos .servicos-title{
+    text-align: center;
+    margin:35px 0;
+}
+
+.servicos .servicos-cards{
+    padding-top: 25px;
+    display:flex;
+    max-width: 950px;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+
+}
+
+
+.servicos .card{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.servicos .card svg{
+    width: 60px;
+    height: 60px;
+    margin: 50px;
+    transition: all 1s;
+}
+
+.servicos .card svg:hover {
+    stroke: #1d61dd;
+    transform: scale(1.1);
+}
+
+.servicos .card h3{
+    font-weight: bold;
+}
+
+.servicos .card p{
+    color: grey;
+    font-size: .8rem;
+    text-align: center;
+}
+
+.servicos .card .card-content{
+    height: 180px;
+    text-align: center;
+}
+
+.servicos button {
+    background:#1d61dd;
+}
+
+.contato {
+    width: 400px;
+    height: 500px;
+}
+
+
+/* RESPONSIVIDADE */
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 480px) {
+    body {
+        margin-bottom: 55px;
+    }
+    header nav ul{
+        position:fixed ;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+
+        z-index: 99;
+
+        background: #1d61dd;
+        color:black;
+        font-weight: bold;
+        height: 55px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header nav p {
+        width:100;
+        text-align: center;
+    }
+}
+
